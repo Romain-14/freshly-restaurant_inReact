@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Meat menu",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc.",
+        "ingredients" : ["meat", "potatoes", "salad"],
+        "price": 15.99,
+        "image": "meat-menu.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Fish menu",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc.",
+        "ingredients" : ["fish", "rice", "vegetables"],
+        "price": 17.99,
+        "image": "fish-menu.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Vegetarian menu",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc.",
+        "ingredients" : ["vegetables", "rice", "salad"],
+        "price": 12.99,
+        "image": "vegetarian-menu.jpg"
+    }
+]
