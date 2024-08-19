@@ -1,0 +1,59 @@
+/* *****************************************************************
+FOOTER
+***************************************************************** */
+
+footer {
+	background: url(../images/footer-bg.jpg) no-repeat;
+	background-size: cover;
+	color: white;
+	font-size: 1.6rem;
+}
+
+footer .flex {
+	padding: 2rem 0;
+}
+
+footer h3 {
+	font-size: 1.8rem;
+	padding-left: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px dashed #ebe3db;
+	margin-bottom: 1rem;
+}
+
+footer h3::before,
+footer h3::after {
+	content: "";
+}
+
+aside {
+	padding: 2rem;
+	text-align: center;
+}
+
+.reseaux a {
+	color: #ebe3db;
+	font-size: 2.5rem;
+	text-decoration: none;
+	margin: 1rem;
+	transition: 0.7s color;
+}
+
+.reseaux a:hover {
+	color: #950000;
+}
+
+.footer {
+	padding: 2em;
+	text-align: center;
+	color: #fff;
+	background-color: #444;
+}
+
+.footer img {
+	width: 5%;
+}
+
+.footer a {
+	color: white;
+}

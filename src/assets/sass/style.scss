@@ -1,0 +1,337 @@
+@import "variables.scss";
+@import "reset.scss";
+@import "font-face.scss";
+@import "global.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "slider.scss";
+@import "responsive.scss";
+
+/* *****************************************************************
+MAIN
+***************************************************************** */
+
+main.container {
+	padding: 2rem;
+}
+
+
+/* *****************************************************************
+INTRO
+***************************************************************** */
+.intro-img {
+	margin-bottom: 2rem;
+}
+
+/* *****************************************************************
+MENU SECTION
+***************************************************************** */
+
+.menu article {
+	background-color: $menu-bcg-color;
+	padding: 2rem 0;
+	margin-bottom: 3rem;
+}
+
+.menu h3 {
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.menu figure,
+.choice figure {
+	position: relative;
+}
+
+.menu img,
+.choice img {
+	display: block;
+	object-fit: cover;
+}
+
+.menu figcaption,
+.choice figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	background-color: #4c4343e6;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: $light-color;
+	font-size: 5rem;
+	font-weight: bold;
+	transition: 0.7s all;
+}
+
+.menu figcaption span {
+	font-size: 1.5rem;
+	font-style: italic;
+}
+
+.menu figcaption::before,
+.choice figcaption::before {
+	content: "";
+	position: absolute;
+	right: 3rem;
+	left: 3rem;
+	top: 3rem;
+	bottom: 3rem;
+	border: 4px solid $light-color;
+}
+
+.menu figure:hover figcaption,
+.choice figure:hover figcaption {
+	opacity: 1;
+}
+
+.menu li {
+	padding: 1rem 2rem;
+	border-bottom: 1px dashed $dark-color;
+	display: flex;
+	align-items: center;
+}
+
+.fa-star {
+	font-size: 1rem;
+	color: #950000;
+	margin: 0 1rem;
+}
+
+.details {
+	display: flex;
+	justify-content: center;
+	background-color: $dark-color;
+	box-shadow: 2px 2px 2px silver;
+	padding: 1rem 0;
+	text-align: center;
+	font-weight: bold;
+	color: $light-color;
+	text-decoration: none;
+	margin: 2rem;
+	transition: 0.7s background-color;
+}
+
+.details:hover,
+.details:focus,
+.details:active {
+	background-color: #950000;
+}
+
+.details img {
+	margin-right: 1rem;
+	width: 3rem;
+}
+
+/* *****************************************************************
+PAGE MENUS
+***************************************************************** */
+
+.select,
+.filter {
+	text-align: center;
+}
+
+.filter {
+	margin-bottom: 2rem;
+}
+
+.choice {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	background-color: $menu-bcg-color;
+	padding-top: 4rem;
+}
+
+.choice div,
+.choice figure {
+	flex-basis: calc(50% - 2rem);
+	margin-bottom: 3rem;
+}
+
+.choice figure,
+.galery img {
+	box-shadow: 3px 3px 8px #4c434380;
+	transition: transform 0.5s;
+}
+
+.choice figure:hover,
+.galery img:hover {
+	transform: scale(1.07);
+}
+
+.choice figcaption h3 {
+	font-size: 1.5rem;
+}
+
+.choice figcaption h3::before,
+.choice figcaption h3::after {
+	content: "";
+}
+
+.choice figcaption img {
+	width: 3rem;
+	margin-bottom: 0.5rem;
+}
+
+.filter button {
+	border: none;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.3rem;
+	background-color: $menu-bcg-color;
+	padding: 1rem 2rem;
+	margin: 2rem 1rem;
+	cursor: pointer;
+	transition: all 0.7s;
+}
+
+.filter button:hover,
+.filter button:focus,
+.filter button:active,
+.mixitup-control-active {
+	color: $light-color !important;
+	background-color: $icon-color !important;
+}
+
+/* *****************************************************************
+PAGE CONTACT
+***************************************************************** */
+
+form {
+	background-color: $menu-bcg-color;
+	padding: 2rem 5rem;
+	margin: auto;
+}
+
+form div {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.mandatory {
+	text-align: center;
+	font-size: 1.6rem;
+	font-style: italic;
+}
+
+.mandatory abbr,
+label abbr {
+	color: $icon-color;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+label abbr {
+	position: absolute;
+	left: -1.5rem;
+}
+
+.mandatory abbr {
+	margin: 0;
+	vertical-align: middle;
+}
+
+fieldset {
+	flex-basis: 48%;
+}
+
+legend,
+.request {
+	font-family: "Merienda", cursive;
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+}
+
+.request {
+	margin-top: 2rem;
+}
+
+input,
+textarea {
+	border: 1px solid $dark-color;
+	border-radius: 5px;
+	padding: 1rem;
+	margin-bottom: 2rem;
+}
+
+label,
+input {
+	display: block;
+	position: relative;
+}
+
+input {
+	width: 100%;
+}
+
+textarea {
+	width: 100%;
+	height: 130px;
+	resize: vertical;
+}
+
+form p {
+	text-align: center;
+}
+
+input[type="submit"] {
+	width: 50%;
+	margin: 3rem auto 0 auto;
+	border: none;
+	background-color: $dark-color;
+	color: $light-color;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.6rem;
+	letter-spacing: 0.3rem;
+	padding: 1rem 3rem;
+}
+
+input[type="submit"]:hover {
+	background-color: $icon-color;
+}
+
+iframe {
+	width: 100%;
+	height: 400px;
+	border: 1px solid $dark-color;
+}
+
+/* *****************************************************************
+PAGE ABOUT
+***************************************************************** */
+
+.galery {
+	background-color: $menu-bcg-color;
+	padding: 3rem 2rem 0 2rem;
+}
+
+.galery figure {
+	margin-bottom: 3rem;
+}
+
+.galery figure:last-of-type {
+	padding-bottom: 2rem;
+}
+
+.galery figcaption {
+	text-align: center;
+}
+
+video {
+	display: block;
+	width: 90%;
+	margin: 5rem auto;
+}
+
+

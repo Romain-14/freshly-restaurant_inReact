@@ -1,0 +1,75 @@
+/* *****************************************************************
+SLIDER
+***************************************************************** */
+
+.slick-dotted.slick-slider {
+	margin-bottom: 10rem;
+}
+
+.slick-next::before,
+.slick-prev::before {
+	font-size: 4rem;
+	color: #ebe3db;
+}
+
+.slick-next {
+	right: 3rem;
+}
+
+.slick-prev {
+	left: 1rem;
+	z-index: 1;
+}
+
+.slick-dots {
+	bottom: -3rem;
+}
+
+.slick-dots li button::before {
+	font-size: 1.5rem;
+	color: #4c4343;
+	opacity: 0.5;
+}
+
+.slick-dots li.slick-active button::before {
+	color: #950000;
+}
+.slider {
+	position: relative;
+}
+
+.fa-circle-arrow-left,
+.fa-circle-arrow-right {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 4rem;
+	color: #fff;
+	opacity: 0.8;
+	border: 4px solid #950000;
+	border-radius: 50%;
+	transition: all 0.5s;
+}
+.fa-circle-arrow-left:hover,
+.fa-circle-arrow-right:hover {
+	opacity: 1;
+	transform: translateY(-50%) scale(1.1);
+}
+
+.fa-circle-arrow-left {
+	left: 10px;
+}
+
+.fa-circle-arrow-right {
+	right: 10px;
+}
+
+/* DOT SLIDES */
+
+.dot-slides {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	font-size: 1.4rem;
+}

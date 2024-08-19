@@ -105,3 +105,68 @@ function MyComponent() {
     return <img src="http://localhost:9000/images/kebab-paysage.webp" alt="The Alt" />;
 }
 ```
+
+## Slider
+
+Ajout d'icônes sur l'image (flèche droite et gauche )
+Également des icônes sous l'image (cercles).
+
+Autant d'icônes qu'il y a d'images.
+
+Création d'une constante slide, qui pour chaque élément aura un id, un nom d'image et le alt.
+
+Création d'un state index, correspondra à la position de l'image à charger depuis la constante slide, par défaut on charge la 1ère image donc index 0.
+
+Au clic sur la flèche droite on incrémente index.
+Inversement pour la flèche gauche.
+
+
+Un événement au clic sur une icône (point) mets à jour le state index.
+
+Les icônes :
+faCircleArrowLeft
+faCircleArrowRight
+faCircle
+
+Le CSS :
+```css
+.slider {
+	position: relative;
+}
+
+.fa-circle-arrow-left,
+.fa-circle-arrow-right {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 4rem;
+	color: #fff;
+	opacity: 0.8;
+	border: 4px solid #950000;
+	border-radius: 50%;
+    transition: all 0.5s;
+}
+.fa-circle-arrow-left:hover,
+.fa-circle-arrow-right:hover{
+    opacity: 1;
+    transform:translateY(-50%) scale(1.1);
+}
+
+.fa-circle-arrow-left {
+	left: 10px;
+}
+
+.fa-circle-arrow-right {
+	right: 10px;
+}
+
+/* DOT SLIDES */
+
+.dot-slides {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.4rem;
+}
+```
